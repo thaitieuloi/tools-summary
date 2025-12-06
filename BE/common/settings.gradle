@@ -1,0 +1,11 @@
+rootProject.name = 'common'
+
+// Include all sub-modules
+include 'base'
+include 'core'
+include 'graphql'
+
+// Map the logical names to actual directory names
+project(':base').projectDir = file('0-base')
+project(':core').projectDir = file('1-core')
+project(':graphql').projectDir = file('2-graphql')

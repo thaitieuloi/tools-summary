@@ -1,0 +1,863 @@
+> Task :clean
+> Task :base:clean
+> Task :core:clean
+> Task :graphql:clean UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :jar
+> Task :assemble
+> Task :check
+> Task :build
+
+> Task :base:compileJava
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :base:processResources
+> Task :base:classes
+> Task :base:resolveMainClassName
+> Task :base:bootJar SKIPPED
+> Task :base:jar
+> Task :base:assemble
+> Task :base:check
+> Task :base:build
+
+> Task :core:compileJava
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\mapping\BeanMapper.java:3: error: package com.fasterxml.jackson.databind does not exist
+import com.fasterxml.jackson.databind.ObjectMapper;
+                                     ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\mapping\BeanMapper.java:6: error: package com.ttl.common.json does not exist
+import com.ttl.common.json.JsonUtil;
+                          ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\mapping\BeanMapper.java:7: error: package com.ttl.common.json does not exist
+import com.ttl.common.json.StandardObjectMapperFactory;
+                          ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\mapping\BeanMapper.java:22: error: package org.apache.commons.beanutils does not exist
+import org.apache.commons.beanutils.BeanUtilsBean;
+                                   ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\mapping\BeanMapper.java:23: error: package org.apache.commons.beanutils does not exist
+import org.apache.commons.beanutils.PropertyUtils;
+                                   ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\mapping\BeanMapper.java:24: error: package org.apache.commons.beanutils does not exist
+import org.apache.commons.beanutils.PropertyUtilsBean;
+                                   ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\mapping\BeanMapper.java:25: error: package org.apache.commons.collections does not exist
+import org.apache.commons.collections.CollectionUtils;
+                                     ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\mapping\BeanMapper.java:26: error: package org.apache.commons.collections does not exist
+import org.apache.commons.collections.MapUtils;
+                                     ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\mapping\BeanMapper.java:53: error: cannot find symbol
+  private final ObjectMapper objectMapper;
+                ^
+  symbol:   class ObjectMapper
+  location: class BeanMapper
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\mapping\BeanMapper.java:55: error: cannot find symbol
+  public BeanMapper(ObjectMapper objectMapper) {
+                    ^
+  symbol:   class ObjectMapper
+  location: class BeanMapper
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\mapping\BeanMapper.java:88: error: cannot find symbol
+  protected BeanUtilsBean makeUtils() {
+            ^
+  symbol:   class BeanUtilsBean
+  location: class BeanMapper
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\mapping\BeanMapper.java:174: error: cannot find symbol
+  protected <E> void doCopy(BeanUtilsBean beanUtilsBean, Object source, E target) throws Exception {
+                            ^
+  symbol:   class BeanUtilsBean
+  location: class BeanMapper
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\mapping\BeanMapper.java:198: error: cannot find symbol
+  protected void copyFromObject(BeanUtilsBean beanUtilsBean, final Object target, Object source)
+                                ^
+  symbol:   class BeanUtilsBean
+  location: class BeanMapper
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\mapping\BeanMapper.java:222: error: cannot find symbol
+  protected void copyFromMap(BeanUtilsBean beanUtilsBean, final Object target, final Map<?, ?> source)
+                             ^
+  symbol:   class BeanUtilsBean
+  location: class BeanMapper
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\mapping\BeanMapper.java:244: error: cannot find symbol
+  protected void setProperty(BeanUtilsBean beanUtilsBean, Object bean, String name, Object value, PropertyDescriptor pd)
+                             ^
+  symbol:   class BeanUtilsBean
+  location: class BeanMapper
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\command\AbstractInput.java:9: error: package com.ttl.common.json does not exist
+import com.ttl.common.json.LifecycleBeanAware;
+                          ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\command\AbstractInput.java:17: error: cannot find symbol
+public class AbstractInput implements WrappedInput, LifecycleBeanAware {
+                                                    ^
+  symbol: class LifecycleBeanAware
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:3: error: package am.ik.yavi.builder.ValidatorBuilder does not exist
+import am.ik.yavi.builder.ValidatorBuilder.ToCollection;
+                                          ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:4: error: package am.ik.yavi.builder.ValidatorBuilder does not exist
+import am.ik.yavi.builder.ValidatorBuilder.ToMap;
+                                          ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:5: error: package am.ik.yavi.constraint does not exist
+import am.ik.yavi.constraint.BigDecimalConstraint;
+                            ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:6: error: package am.ik.yavi.constraint does not exist
+import am.ik.yavi.constraint.BigIntegerConstraint;
+                            ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:7: error: package am.ik.yavi.constraint does not exist
+import am.ik.yavi.constraint.BooleanConstraint;
+                            ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:8: error: package am.ik.yavi.constraint does not exist
+import am.ik.yavi.constraint.CharSequenceConstraint;
+                            ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:9: error: package am.ik.yavi.constraint does not exist
+import am.ik.yavi.constraint.DoubleConstraint;
+                            ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:10: error: package am.ik.yavi.constraint does not exist
+import am.ik.yavi.constraint.FloatConstraint;
+                            ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:11: error: package am.ik.yavi.constraint does not exist
+import am.ik.yavi.constraint.IntegerConstraint;
+                            ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:12: error: package am.ik.yavi.constraint does not exist
+import am.ik.yavi.constraint.LongConstraint;
+                            ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:13: error: package am.ik.yavi.core does not exist
+import am.ik.yavi.core.Constraint;
+                      ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\LazyBeanConstraint.java:11: error: package org.jetbrains.annotations does not exist
+import org.jetbrains.annotations.NotNull;
+                                ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:28: error: package org.apache.commons.lang3 does not exist
+import org.apache.commons.lang3.BooleanUtils;
+                               ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\AbstractBeanConstraint.java:3: error: package am.ik.yavi.core does not exist
+import am.ik.yavi.core.CustomConstraint;
+                      ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\AbstractBeanConstraint.java:8: error: cannot find symbol
+public abstract class AbstractBeanConstraint implements CustomConstraint<Bean> {
+                                                        ^
+  symbol: class CustomConstraint
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\BeanConstraint.java:9: error: package org.jetbrains.annotations does not exist
+import org.jetbrains.annotations.NotNull;
+                                ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:185: error: cannot find symbol
+  public ValidatorBuilder ofString(String field, String name, Function<CharSequenceConstraint<Bean, String>, CharSequenceConstraint<Bean, String>> converter) {
+                                                                       ^
+  symbol:   class CharSequenceConstraint
+  location: class ValidatorBuilder
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:185: error: cannot find symbol
+  public ValidatorBuilder ofString(String field, String name, Function<CharSequenceConstraint<Bean, String>, CharSequenceConstraint<Bean, String>> converter) {
+                                                                                                             ^
+  symbol:   class CharSequenceConstraint
+  location: class ValidatorBuilder
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:189: error: cannot find symbol
+  public ValidatorBuilder ofBoolean(String field, String name, Function<BooleanConstraint<Bean>, BooleanConstraint<Bean>> converter) {
+                                                                        ^
+  symbol:   class BooleanConstraint
+  location: class ValidatorBuilder
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:189: error: cannot find symbol
+  public ValidatorBuilder ofBoolean(String field, String name, Function<BooleanConstraint<Bean>, BooleanConstraint<Bean>> converter) {
+                                                                                                 ^
+  symbol:   class BooleanConstraint
+  location: class ValidatorBuilder
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:193: error: cannot find symbol
+  public ValidatorBuilder ofInteger(String field, String name, Function<IntegerConstraint<Bean>, IntegerConstraint<Bean>> converter) {
+                                                                        ^
+  symbol:   class IntegerConstraint
+  location: class ValidatorBuilder
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:193: error: cannot find symbol
+  public ValidatorBuilder ofInteger(String field, String name, Function<IntegerConstraint<Bean>, IntegerConstraint<Bean>> converter) {
+                                                                                                 ^
+  symbol:   class IntegerConstraint
+  location: class ValidatorBuilder
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:197: error: cannot find symbol
+  public ValidatorBuilder ofBigInteger(String field, String name, Function<BigIntegerConstraint<Bean>, BigIntegerConstraint<Bean>> converter) {
+                                                                           ^
+  symbol:   class BigIntegerConstraint
+  location: class ValidatorBuilder
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:197: error: cannot find symbol
+  public ValidatorBuilder ofBigInteger(String field, String name, Function<BigIntegerConstraint<Bean>, BigIntegerConstraint<Bean>> converter) {
+                                                                                                       ^
+  symbol:   class BigIntegerConstraint
+  location: class ValidatorBuilder
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:201: error: cannot find symbol
+  public ValidatorBuilder ofBigDecimal(String field, String name, Function<BigDecimalConstraint<Bean>, BigDecimalConstraint<Bean>> converter) {
+                                                                           ^
+  symbol:   class BigDecimalConstraint
+  location: class ValidatorBuilder
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:201: error: cannot find symbol
+  public ValidatorBuilder ofBigDecimal(String field, String name, Function<BigDecimalConstraint<Bean>, BigDecimalConstraint<Bean>> converter) {
+                                                                                                       ^
+  symbol:   class BigDecimalConstraint
+  location: class ValidatorBuilder
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:205: error: cannot find symbol
+  public ValidatorBuilder ofFloat(String field, String name, Function<FloatConstraint<Bean>, FloatConstraint<Bean>> converter) {
+                                                                      ^
+  symbol:   class FloatConstraint
+  location: class ValidatorBuilder
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:205: error: cannot find symbol
+  public ValidatorBuilder ofFloat(String field, String name, Function<FloatConstraint<Bean>, FloatConstraint<Bean>> converter) {
+                                                                                             ^
+  symbol:   class FloatConstraint
+  location: class ValidatorBuilder
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:209: error: cannot find symbol
+  public ValidatorBuilder ofDouble(String field, String name, Function<DoubleConstraint<Bean>, DoubleConstraint<Bean>> converter) {
+                                                                       ^
+  symbol:   class DoubleConstraint
+  location: class ValidatorBuilder
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:209: error: cannot find symbol
+  public ValidatorBuilder ofDouble(String field, String name, Function<DoubleConstraint<Bean>, DoubleConstraint<Bean>> converter) {
+                                                                                               ^
+  symbol:   class DoubleConstraint
+  location: class ValidatorBuilder
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:277: error: cannot find symbol
+    public ValidatorBuilder overrideString(Function<CharSequenceConstraint<Bean, String>, CharSequenceConstraint<Bean, String>> converter) {
+                                                    ^
+  symbol:   class CharSequenceConstraint
+  location: class ValidatorBuilder.Meta
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:277: error: cannot find symbol
+    public ValidatorBuilder overrideString(Function<CharSequenceConstraint<Bean, String>, CharSequenceConstraint<Bean, String>> converter) {
+                                                                                          ^
+  symbol:   class CharSequenceConstraint
+  location: class ValidatorBuilder.Meta
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:281: error: cannot find symbol
+    public ValidatorBuilder asString(Function<CharSequenceConstraint<Bean, String>, CharSequenceConstraint<Bean, String>> converter) {
+                                              ^
+  symbol:   class CharSequenceConstraint
+  location: class ValidatorBuilder.Meta
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:281: error: cannot find symbol
+    public ValidatorBuilder asString(Function<CharSequenceConstraint<Bean, String>, CharSequenceConstraint<Bean, String>> converter) {
+                                                                                    ^
+  symbol:   class CharSequenceConstraint
+  location: class ValidatorBuilder.Meta
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:286: error: cannot find symbol
+    public ValidatorBuilder overrideBoolean(Function<BooleanConstraint<Bean>, BooleanConstraint<Bean>> converter) {
+                                                     ^
+  symbol:   class BooleanConstraint
+  location: class ValidatorBuilder.Meta
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:286: error: cannot find symbol
+    public ValidatorBuilder overrideBoolean(Function<BooleanConstraint<Bean>, BooleanConstraint<Bean>> converter) {
+                                                                              ^
+  symbol:   class BooleanConstraint
+  location: class ValidatorBuilder.Meta
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:290: error: cannot find symbol
+    public ValidatorBuilder asBoolean(Function<BooleanConstraint<Bean>, BooleanConstraint<Bean>> converter) {
+                                               ^
+  symbol:   class BooleanConstraint
+  location: class ValidatorBuilder.Meta
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:290: error: cannot find symbol
+    public ValidatorBuilder asBoolean(Function<BooleanConstraint<Bean>, BooleanConstraint<Bean>> converter) {
+                                                                        ^
+  symbol:   class BooleanConstraint
+  location: class ValidatorBuilder.Meta
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:294: error: cannot find symbol
+    public ValidatorBuilder overrideInteger(Function<IntegerConstraint<Bean>, IntegerConstraint<Bean>> converter) {
+                                                     ^
+  symbol:   class IntegerConstraint
+  location: class ValidatorBuilder.Meta
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:294: error: cannot find symbol
+    public ValidatorBuilder overrideInteger(Function<IntegerConstraint<Bean>, IntegerConstraint<Bean>> converter) {
+                                                                              ^
+  symbol:   class IntegerConstraint
+  location: class ValidatorBuilder.Meta
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:298: error: cannot find symbol
+    public ValidatorBuilder asInteger(Function<IntegerConstraint<Bean>, IntegerConstraint<Bean>> converter) {
+                                               ^
+  symbol:   class IntegerConstraint
+  location: class ValidatorBuilder.Meta
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:298: error: cannot find symbol
+    public ValidatorBuilder asInteger(Function<IntegerConstraint<Bean>, IntegerConstraint<Bean>> converter) {
+                                                                        ^
+  symbol:   class IntegerConstraint
+  location: class ValidatorBuilder.Meta
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:302: error: cannot find symbol
+    public ValidatorBuilder overrideBigInteger(Function<BigIntegerConstraint<Bean>, BigIntegerConstraint<Bean>> converter) {
+                                                        ^
+  symbol:   class BigIntegerConstraint
+  location: class ValidatorBuilder.Meta
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:302: error: cannot find symbol
+    public ValidatorBuilder overrideBigInteger(Function<BigIntegerConstraint<Bean>, BigIntegerConstraint<Bean>> converter) {
+                                                                                    ^
+  symbol:   class BigIntegerConstraint
+  location: class ValidatorBuilder.Meta
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:306: error: cannot find symbol
+    public ValidatorBuilder asBigInteger(Function<BigIntegerConstraint<Bean>, BigIntegerConstraint<Bean>> converter) {
+                                                  ^
+  symbol:   class BigIntegerConstraint
+  location: class ValidatorBuilder.Meta
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:306: error: cannot find symbol
+    public ValidatorBuilder asBigInteger(Function<BigIntegerConstraint<Bean>, BigIntegerConstraint<Bean>> converter) {
+                                                                              ^
+  symbol:   class BigIntegerConstraint
+  location: class ValidatorBuilder.Meta
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:310: error: cannot find symbol
+    public ValidatorBuilder overrideBigDecimal(Function<BigDecimalConstraint<Bean>, BigDecimalConstraint<Bean>> converter) {
+                                                        ^
+  symbol:   class BigDecimalConstraint
+  location: class ValidatorBuilder.Meta
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:310: error: cannot find symbol
+    public ValidatorBuilder overrideBigDecimal(Function<BigDecimalConstraint<Bean>, BigDecimalConstraint<Bean>> converter) {
+                                                                                    ^
+  symbol:   class BigDecimalConstraint
+  location: class ValidatorBuilder.Meta
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:314: error: cannot find symbol
+    public ValidatorBuilder asBigDecimal(Function<BigDecimalConstraint<Bean>, BigDecimalConstraint<Bean>> converter) {
+                                                  ^
+  symbol:   class BigDecimalConstraint
+  location: class ValidatorBuilder.Meta
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:314: error: cannot find symbol
+    public ValidatorBuilder asBigDecimal(Function<BigDecimalConstraint<Bean>, BigDecimalConstraint<Bean>> converter) {
+                                                                              ^
+  symbol:   class BigDecimalConstraint
+  location: class ValidatorBuilder.Meta
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:318: error: cannot find symbol
+    public ValidatorBuilder overrideFloat(Function<FloatConstraint<Bean>, FloatConstraint<Bean>> converter) {
+                                                   ^
+  symbol:   class FloatConstraint
+  location: class ValidatorBuilder.Meta
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:318: error: cannot find symbol
+    public ValidatorBuilder overrideFloat(Function<FloatConstraint<Bean>, FloatConstraint<Bean>> converter) {
+                                                                          ^
+  symbol:   class FloatConstraint
+  location: class ValidatorBuilder.Meta
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:322: error: cannot find symbol
+    public ValidatorBuilder asFloat(Function<FloatConstraint<Bean>, FloatConstraint<Bean>> converter) {
+                                             ^
+  symbol:   class FloatConstraint
+  location: class ValidatorBuilder.Meta
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:322: error: cannot find symbol
+    public ValidatorBuilder asFloat(Function<FloatConstraint<Bean>, FloatConstraint<Bean>> converter) {
+                                                                    ^
+  symbol:   class FloatConstraint
+  location: class ValidatorBuilder.Meta
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:326: error: cannot find symbol
+    public ValidatorBuilder overrideDouble(Function<DoubleConstraint<Bean>, DoubleConstraint<Bean>> converter) {
+                                                    ^
+  symbol:   class DoubleConstraint
+  location: class ValidatorBuilder.Meta
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:326: error: cannot find symbol
+    public ValidatorBuilder overrideDouble(Function<DoubleConstraint<Bean>, DoubleConstraint<Bean>> converter) {
+                                                                            ^
+  symbol:   class DoubleConstraint
+  location: class ValidatorBuilder.Meta
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:330: error: cannot find symbol
+    public ValidatorBuilder asDouble(Function<DoubleConstraint<Bean>, DoubleConstraint<Bean>> converter) {
+                                              ^
+  symbol:   class DoubleConstraint
+  location: class ValidatorBuilder.Meta
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:330: error: cannot find symbol
+    public ValidatorBuilder asDouble(Function<DoubleConstraint<Bean>, DoubleConstraint<Bean>> converter) {
+                                                                      ^
+  symbol:   class DoubleConstraint
+  location: class ValidatorBuilder.Meta
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\Validator.java:8: error: package am.ik.yavi.core does not exist
+  private final am.ik.yavi.core.Validator<Bean> validator;
+                               ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\Validator.java:10: error: package am.ik.yavi.core does not exist
+  public Validator(am.ik.yavi.core.Validator<Bean> validator) {
+                                  ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\Validator.java:19: error: package am.ik.yavi.core does not exist
+  am.ik.yavi.core.Validator<Bean> getYaviValidator() {
+                 ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ConstraintViolations.java:10: error: package am.ik.yavi.core does not exist
+  private final List<am.ik.yavi.core.ConstraintViolations> constraintViolations;
+                                    ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ConstraintViolation.java:3: error: package am.ik.yavi.core does not exist
+import am.ik.yavi.core.ViolationDetail;
+                      ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ConstraintViolations.java:13: error: package am.ik.yavi.core does not exist
+  public ConstraintViolations(am.ik.yavi.core.ConstraintViolations constraintViolations) {
+                                             ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ConstraintViolations.java:21: error: package am.ik.yavi.core does not exist
+  public ConstraintViolations(List<am.ik.yavi.core.ConstraintViolations> constraintViolations) {
+                                                  ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ConstraintViolations.java:33: error: package am.ik.yavi.core does not exist
+  List<am.ik.yavi.core.ConstraintViolations> _raw() {
+                      ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ConstraintViolation.java:11: error: package am.ik.yavi.core does not exist
+  private final am.ik.yavi.core.ConstraintViolation constraintViolation;
+                               ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ConstraintViolation.java:13: error: package am.ik.yavi.core does not exist
+  public ConstraintViolation(am.ik.yavi.core.ConstraintViolation constraintViolation) {
+                                            ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ConstraintViolation.java:25: error: cannot find symbol
+  public ViolationDetail detail() {
+         ^
+  symbol:   class ViolationDetail
+  location: class ConstraintViolation
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ConstraintViolation.java:56: error: package am.ik.yavi.core does not exist
+  public am.ik.yavi.core.ConstraintViolation rename(Function<? super String, String> rename) {
+                        ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ConstraintViolation.java:60: error: package am.ik.yavi.core does not exist
+  public am.ik.yavi.core.ConstraintViolation indexed(int index) {
+                        ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\command\UpdateEntityCommand.java:7: error: package org.jetbrains.annotations does not exist
+import org.jetbrains.annotations.NotNull;
+                                ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\domain\MoneyServiceFactory.java:5: error: package org.apache.commons.collections4.map does not exist
+import org.apache.commons.collections4.map.CaseInsensitiveMap;
+                                          ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\event\AppEventListener.java:4: error: package com.ttl.common.log does not exist
+import com.ttl.common.log.Logger;
+                         ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\event\AppEventListener.java:5: error: package com.ttl.common.log does not exist
+import com.ttl.common.log.LoggerFactory;
+                         ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\event\AppEventListener.java:13: error: cannot find symbol
+  private static final Logger logger = LoggerFactory.getLogger(AppEventListener.class);
+                       ^
+  symbol:   class Logger
+  location: class AppEventListener<T,E>
+  where T,E are type-variables:
+    T extends Object declared in class AppEventListener
+    E extends AppEvent<T> declared in class AppEventListener
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\util\BatchUtil.java:7: error: package org.apache.commons.collections4 does not exist
+import org.apache.commons.collections4.ListUtils;
+                                      ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\util\BooleanUtil.java:10: error: package org.apache.commons.lang3 does not exist
+import org.apache.commons.lang3.BooleanUtils;
+                               ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\util\BooleanUtil.java:12: error: cannot find symbol
+public class BooleanUtil extends BooleanUtils {
+                                 ^
+  symbol: class BooleanUtils
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\util\CollectionUtil.java:15: error: package org.apache.commons.collections does not exist
+import org.apache.commons.collections.CollectionUtils;
+                                     ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\util\CollectionUtil.java:17: error: cannot find symbol
+public class CollectionUtil extends CollectionUtils {
+                                    ^
+  symbol: class CollectionUtils
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\util\DateUtil.java:10: error: package org.apache.commons.lang3.time does not exist
+import org.apache.commons.lang3.time.DateFormatUtils;
+                                    ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\util\HtmlUtil.java:3: error: package org.jsoup does not exist
+import org.jsoup.Jsoup;
+                ^
+100 errors
+
+> Task :core:compileJava FAILED
+
+[Incubating] Problems report is available at: file:///D:/CNTT/tool/BE/common/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':core:compileJava'.
+> Compilation failed; see the compiler output below.
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\mapping\BeanMapper.java:53: error: cannot find symbol
+    private final ObjectMapper objectMapper;
+                  ^
+    symbol:   class ObjectMapper
+    location: class BeanMapper
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\mapping\BeanMapper.java:55: error: cannot find symbol
+    public BeanMapper(ObjectMapper objectMapper) {
+                      ^
+    symbol:   class ObjectMapper
+    location: class BeanMapper
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\mapping\BeanMapper.java:88: error: cannot find symbol
+    protected BeanUtilsBean makeUtils() {
+              ^
+    symbol:   class BeanUtilsBean
+    location: class BeanMapper
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\mapping\BeanMapper.java:174: error: cannot find symbol
+    protected <E> void doCopy(BeanUtilsBean beanUtilsBean, Object source, E target) throws Exception {
+                              ^
+    symbol:   class BeanUtilsBean
+    location: class BeanMapper
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\mapping\BeanMapper.java:198: error: cannot find symbol
+    protected void copyFromObject(BeanUtilsBean beanUtilsBean, final Object target, Object source)
+                                  ^
+    symbol:   class BeanUtilsBean
+    location: class BeanMapper
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\mapping\BeanMapper.java:222: error: cannot find symbol
+    protected void copyFromMap(BeanUtilsBean beanUtilsBean, final Object target, final Map<?, ?> source)
+                               ^
+    symbol:   class BeanUtilsBean
+    location: class BeanMapper
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\mapping\BeanMapper.java:244: error: cannot find symbol
+    protected void setProperty(BeanUtilsBean beanUtilsBean, Object bean, String name, Object value, PropertyDescriptor pd)
+                               ^
+    symbol:   class BeanUtilsBean
+    location: class BeanMapper
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:185: error: cannot find symbol
+    public ValidatorBuilder ofString(String field, String name, Function<CharSequenceConstraint<Bean, String>, CharSequenceConstraint<Bean, String>> converter) {
+                                                                         ^
+    symbol:   class CharSequenceConstraint
+    location: class ValidatorBuilder
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:185: error: cannot find symbol
+    public ValidatorBuilder ofString(String field, String name, Function<CharSequenceConstraint<Bean, String>, CharSequenceConstraint<Bean, String>> converter) {
+                                                                                                               ^
+    symbol:   class CharSequenceConstraint
+    location: class ValidatorBuilder
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:189: error: cannot find symbol
+    public ValidatorBuilder ofBoolean(String field, String name, Function<BooleanConstraint<Bean>, BooleanConstraint<Bean>> converter) {
+                                                                          ^
+    symbol:   class BooleanConstraint
+    location: class ValidatorBuilder
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:189: error: cannot find symbol
+    public ValidatorBuilder ofBoolean(String field, String name, Function<BooleanConstraint<Bean>, BooleanConstraint<Bean>> converter) {
+                                                                                                   ^
+    symbol:   class BooleanConstraint
+    location: class ValidatorBuilder
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:193: error: cannot find symbol
+    public ValidatorBuilder ofInteger(String field, String name, Function<IntegerConstraint<Bean>, IntegerConstraint<Bean>> converter) {
+                                                                          ^
+    symbol:   class IntegerConstraint
+    location: class ValidatorBuilder
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:193: error: cannot find symbol
+    public ValidatorBuilder ofInteger(String field, String name, Function<IntegerConstraint<Bean>, IntegerConstraint<Bean>> converter) {
+                                                                                                   ^
+    symbol:   class IntegerConstraint
+    location: class ValidatorBuilder
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:197: error: cannot find symbol
+    public ValidatorBuilder ofBigInteger(String field, String name, Function<BigIntegerConstraint<Bean>, BigIntegerConstraint<Bean>> converter) {
+                                                                             ^
+    symbol:   class BigIntegerConstraint
+    location: class ValidatorBuilder
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:197: error: cannot find symbol
+    public ValidatorBuilder ofBigInteger(String field, String name, Function<BigIntegerConstraint<Bean>, BigIntegerConstraint<Bean>> converter) {
+                                                                                                         ^
+    symbol:   class BigIntegerConstraint
+    location: class ValidatorBuilder
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:201: error: cannot find symbol
+    public ValidatorBuilder ofBigDecimal(String field, String name, Function<BigDecimalConstraint<Bean>, BigDecimalConstraint<Bean>> converter) {
+                                                                             ^
+    symbol:   class BigDecimalConstraint
+    location: class ValidatorBuilder
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:201: error: cannot find symbol
+    public ValidatorBuilder ofBigDecimal(String field, String name, Function<BigDecimalConstraint<Bean>, BigDecimalConstraint<Bean>> converter) {
+                                                                                                         ^
+    symbol:   class BigDecimalConstraint
+    location: class ValidatorBuilder
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:205: error: cannot find symbol
+    public ValidatorBuilder ofFloat(String field, String name, Function<FloatConstraint<Bean>, FloatConstraint<Bean>> converter) {
+                                                                        ^
+    symbol:   class FloatConstraint
+    location: class ValidatorBuilder
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:205: error: cannot find symbol
+    public ValidatorBuilder ofFloat(String field, String name, Function<FloatConstraint<Bean>, FloatConstraint<Bean>> converter) {
+                                                                                               ^
+    symbol:   class FloatConstraint
+    location: class ValidatorBuilder
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:209: error: cannot find symbol
+    public ValidatorBuilder ofDouble(String field, String name, Function<DoubleConstraint<Bean>, DoubleConstraint<Bean>> converter) {
+                                                                         ^
+    symbol:   class DoubleConstraint
+    location: class ValidatorBuilder
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:209: error: cannot find symbol
+    public ValidatorBuilder ofDouble(String field, String name, Function<DoubleConstraint<Bean>, DoubleConstraint<Bean>> converter) {
+                                                                                                 ^
+    symbol:   class DoubleConstraint
+    location: class ValidatorBuilder
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:277: error: cannot find symbol
+      public ValidatorBuilder overrideString(Function<CharSequenceConstraint<Bean, String>, CharSequenceConstraint<Bean, String>> converter) {
+                                                      ^
+    symbol:   class CharSequenceConstraint
+    location: class ValidatorBuilder.Meta
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:277: error: cannot find symbol
+      public ValidatorBuilder overrideString(Function<CharSequenceConstraint<Bean, String>, CharSequenceConstraint<Bean, String>> converter) {
+                                                                                            ^
+    symbol:   class CharSequenceConstraint
+    location: class ValidatorBuilder.Meta
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:281: error: cannot find symbol
+      public ValidatorBuilder asString(Function<CharSequenceConstraint<Bean, String>, CharSequenceConstraint<Bean, String>> converter) {
+                                                ^
+    symbol:   class CharSequenceConstraint
+    location: class ValidatorBuilder.Meta
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:281: error: cannot find symbol
+      public ValidatorBuilder asString(Function<CharSequenceConstraint<Bean, String>, CharSequenceConstraint<Bean, String>> converter) {
+                                                                                      ^
+    symbol:   class CharSequenceConstraint
+    location: class ValidatorBuilder.Meta
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:286: error: cannot find symbol
+      public ValidatorBuilder overrideBoolean(Function<BooleanConstraint<Bean>, BooleanConstraint<Bean>> converter) {
+                                                       ^
+    symbol:   class BooleanConstraint
+    location: class ValidatorBuilder.Meta
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:286: error: cannot find symbol
+      public ValidatorBuilder overrideBoolean(Function<BooleanConstraint<Bean>, BooleanConstraint<Bean>> converter) {
+                                                                                ^
+    symbol:   class BooleanConstraint
+    location: class ValidatorBuilder.Meta
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:290: error: cannot find symbol
+      public ValidatorBuilder asBoolean(Function<BooleanConstraint<Bean>, BooleanConstraint<Bean>> converter) {
+                                                 ^
+    symbol:   class BooleanConstraint
+    location: class ValidatorBuilder.Meta
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:290: error: cannot find symbol
+      public ValidatorBuilder asBoolean(Function<BooleanConstraint<Bean>, BooleanConstraint<Bean>> converter) {
+                                                                          ^
+    symbol:   class BooleanConstraint
+    location: class ValidatorBuilder.Meta
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:294: error: cannot find symbol
+      public ValidatorBuilder overrideInteger(Function<IntegerConstraint<Bean>, IntegerConstraint<Bean>> converter) {
+                                                       ^
+    symbol:   class IntegerConstraint
+    location: class ValidatorBuilder.Meta
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:294: error: cannot find symbol
+      public ValidatorBuilder overrideInteger(Function<IntegerConstraint<Bean>, IntegerConstraint<Bean>> converter) {
+                                                                                ^
+    symbol:   class IntegerConstraint
+    location: class ValidatorBuilder.Meta
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:298: error: cannot find symbol
+      public ValidatorBuilder asInteger(Function<IntegerConstraint<Bean>, IntegerConstraint<Bean>> converter) {
+                                                 ^
+    symbol:   class IntegerConstraint
+    location: class ValidatorBuilder.Meta
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:298: error: cannot find symbol
+      public ValidatorBuilder asInteger(Function<IntegerConstraint<Bean>, IntegerConstraint<Bean>> converter) {
+                                                                          ^
+    symbol:   class IntegerConstraint
+    location: class ValidatorBuilder.Meta
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:302: error: cannot find symbol
+      public ValidatorBuilder overrideBigInteger(Function<BigIntegerConstraint<Bean>, BigIntegerConstraint<Bean>> converter) {
+                                                          ^
+    symbol:   class BigIntegerConstraint
+    location: class ValidatorBuilder.Meta
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:302: error: cannot find symbol
+      public ValidatorBuilder overrideBigInteger(Function<BigIntegerConstraint<Bean>, BigIntegerConstraint<Bean>> converter) {
+                                                                                      ^
+    symbol:   class BigIntegerConstraint
+    location: class ValidatorBuilder.Meta
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:306: error: cannot find symbol
+      public ValidatorBuilder asBigInteger(Function<BigIntegerConstraint<Bean>, BigIntegerConstraint<Bean>> converter) {
+                                                    ^
+    symbol:   class BigIntegerConstraint
+    location: class ValidatorBuilder.Meta
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:306: error: cannot find symbol
+      public ValidatorBuilder asBigInteger(Function<BigIntegerConstraint<Bean>, BigIntegerConstraint<Bean>> converter) {
+                                                                                ^
+    symbol:   class BigIntegerConstraint
+    location: class ValidatorBuilder.Meta
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:310: error: cannot find symbol
+      public ValidatorBuilder overrideBigDecimal(Function<BigDecimalConstraint<Bean>, BigDecimalConstraint<Bean>> converter) {
+                                                          ^
+    symbol:   class BigDecimalConstraint
+    location: class ValidatorBuilder.Meta
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:310: error: cannot find symbol
+      public ValidatorBuilder overrideBigDecimal(Function<BigDecimalConstraint<Bean>, BigDecimalConstraint<Bean>> converter) {
+                                                                                      ^
+    symbol:   class BigDecimalConstraint
+    location: class ValidatorBuilder.Meta
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:314: error: cannot find symbol
+      public ValidatorBuilder asBigDecimal(Function<BigDecimalConstraint<Bean>, BigDecimalConstraint<Bean>> converter) {
+                                                    ^
+    symbol:   class BigDecimalConstraint
+    location: class ValidatorBuilder.Meta
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:314: error: cannot find symbol
+      public ValidatorBuilder asBigDecimal(Function<BigDecimalConstraint<Bean>, BigDecimalConstraint<Bean>> converter) {
+                                                                                ^
+    symbol:   class BigDecimalConstraint
+    location: class ValidatorBuilder.Meta
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:318: error: cannot find symbol
+      public ValidatorBuilder overrideFloat(Function<FloatConstraint<Bean>, FloatConstraint<Bean>> converter) {
+                                                     ^
+    symbol:   class FloatConstraint
+    location: class ValidatorBuilder.Meta
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:318: error: cannot find symbol
+      public ValidatorBuilder overrideFloat(Function<FloatConstraint<Bean>, FloatConstraint<Bean>> converter) {
+                                                                            ^
+    symbol:   class FloatConstraint
+    location: class ValidatorBuilder.Meta
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:322: error: cannot find symbol
+      public ValidatorBuilder asFloat(Function<FloatConstraint<Bean>, FloatConstraint<Bean>> converter) {
+                                               ^
+    symbol:   class FloatConstraint
+    location: class ValidatorBuilder.Meta
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:322: error: cannot find symbol
+      public ValidatorBuilder asFloat(Function<FloatConstraint<Bean>, FloatConstraint<Bean>> converter) {
+                                                                      ^
+    symbol:   class FloatConstraint
+    location: class ValidatorBuilder.Meta
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:326: error: cannot find symbol
+      public ValidatorBuilder overrideDouble(Function<DoubleConstraint<Bean>, DoubleConstraint<Bean>> converter) {
+                                                      ^
+    symbol:   class DoubleConstraint
+    location: class ValidatorBuilder.Meta
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:326: error: cannot find symbol
+      public ValidatorBuilder overrideDouble(Function<DoubleConstraint<Bean>, DoubleConstraint<Bean>> converter) {
+                                                                              ^
+    symbol:   class DoubleConstraint
+    location: class ValidatorBuilder.Meta
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:330: error: cannot find symbol
+      public ValidatorBuilder asDouble(Function<DoubleConstraint<Bean>, DoubleConstraint<Bean>> converter) {
+                                                ^
+    symbol:   class DoubleConstraint
+    location: class ValidatorBuilder.Meta
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:330: error: cannot find symbol
+      public ValidatorBuilder asDouble(Function<DoubleConstraint<Bean>, DoubleConstraint<Bean>> converter) {
+                                                                        ^
+    symbol:   class DoubleConstraint
+    location: class ValidatorBuilder.Meta
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ConstraintViolation.java:25: error: cannot find symbol
+    public ViolationDetail detail() {
+           ^
+    symbol:   class ViolationDetail
+    location: class ConstraintViolation
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\event\AppEventListener.java:13: error: cannot find symbol
+    private static final Logger logger = LoggerFactory.getLogger(AppEventListener.class);
+                         ^
+    symbol:   class Logger
+    location: class AppEventListener<T,E>
+    where T,E are type-variables:
+      T extends Object declared in class AppEventListener
+      E extends AppEvent<T> declared in class AppEventListener
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\command\AbstractInput.java:17: error: cannot find symbol
+  public class AbstractInput implements WrappedInput, LifecycleBeanAware {
+                                                      ^
+    symbol: class LifecycleBeanAware
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\AbstractBeanConstraint.java:8: error: cannot find symbol
+  public abstract class AbstractBeanConstraint implements CustomConstraint<Bean> {
+                                                          ^
+    symbol: class CustomConstraint
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\util\BooleanUtil.java:12: error: cannot find symbol
+  public class BooleanUtil extends BooleanUtils {
+                                   ^
+    symbol: class BooleanUtils
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\util\CollectionUtil.java:17: error: cannot find symbol
+  public class CollectionUtil extends CollectionUtils {
+                                      ^
+    symbol: class CollectionUtils
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\mapping\BeanMapper.java:3: error: package com.fasterxml.jackson.databind does not exist
+  import com.fasterxml.jackson.databind.ObjectMapper;
+                                       ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\mapping\BeanMapper.java:6: error: package com.ttl.common.json does not exist
+  import com.ttl.common.json.JsonUtil;
+                            ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\mapping\BeanMapper.java:7: error: package com.ttl.common.json does not exist
+  import com.ttl.common.json.StandardObjectMapperFactory;
+                            ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\mapping\BeanMapper.java:22: error: package org.apache.commons.beanutils does not exist
+  import org.apache.commons.beanutils.BeanUtilsBean;
+                                     ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\mapping\BeanMapper.java:23: error: package org.apache.commons.beanutils does not exist
+  import org.apache.commons.beanutils.PropertyUtils;
+                                     ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\mapping\BeanMapper.java:24: error: package org.apache.commons.beanutils does not exist
+  import org.apache.commons.beanutils.PropertyUtilsBean;
+                                     ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\mapping\BeanMapper.java:25: error: package org.apache.commons.collections does not exist
+  import org.apache.commons.collections.CollectionUtils;
+                                       ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\mapping\BeanMapper.java:26: error: package org.apache.commons.collections does not exist
+  import org.apache.commons.collections.MapUtils;
+                                       ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\command\AbstractInput.java:9: error: package com.ttl.common.json does not exist
+  import com.ttl.common.json.LifecycleBeanAware;
+                            ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:3: error: package am.ik.yavi.builder.ValidatorBuilder does not exist
+  import am.ik.yavi.builder.ValidatorBuilder.ToCollection;
+                                            ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:4: error: package am.ik.yavi.builder.ValidatorBuilder does not exist
+  import am.ik.yavi.builder.ValidatorBuilder.ToMap;
+                                            ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:5: error: package am.ik.yavi.constraint does not exist
+  import am.ik.yavi.constraint.BigDecimalConstraint;
+                              ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:6: error: package am.ik.yavi.constraint does not exist
+  import am.ik.yavi.constraint.BigIntegerConstraint;
+                              ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:7: error: package am.ik.yavi.constraint does not exist
+  import am.ik.yavi.constraint.BooleanConstraint;
+                              ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:8: error: package am.ik.yavi.constraint does not exist
+  import am.ik.yavi.constraint.CharSequenceConstraint;
+                              ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:9: error: package am.ik.yavi.constraint does not exist
+  import am.ik.yavi.constraint.DoubleConstraint;
+                              ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:10: error: package am.ik.yavi.constraint does not exist
+  import am.ik.yavi.constraint.FloatConstraint;
+                              ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:11: error: package am.ik.yavi.constraint does not exist
+  import am.ik.yavi.constraint.IntegerConstraint;
+                              ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:12: error: package am.ik.yavi.constraint does not exist
+  import am.ik.yavi.constraint.LongConstraint;
+                              ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:13: error: package am.ik.yavi.core does not exist
+  import am.ik.yavi.core.Constraint;
+                        ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\LazyBeanConstraint.java:11: error: package org.jetbrains.annotations does not exist
+  import org.jetbrains.annotations.NotNull;
+                                  ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ValidatorBuilder.java:28: error: package org.apache.commons.lang3 does not exist
+  import org.apache.commons.lang3.BooleanUtils;
+                                 ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\AbstractBeanConstraint.java:3: error: package am.ik.yavi.core does not exist
+  import am.ik.yavi.core.CustomConstraint;
+                        ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\BeanConstraint.java:9: error: package org.jetbrains.annotations does not exist
+  import org.jetbrains.annotations.NotNull;
+                                  ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\Validator.java:8: error: package am.ik.yavi.core does not exist
+    private final am.ik.yavi.core.Validator<Bean> validator;
+                                 ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\Validator.java:10: error: package am.ik.yavi.core does not exist
+    public Validator(am.ik.yavi.core.Validator<Bean> validator) {
+                                    ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\Validator.java:19: error: package am.ik.yavi.core does not exist
+    am.ik.yavi.core.Validator<Bean> getYaviValidator() {
+                   ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ConstraintViolations.java:10: error: package am.ik.yavi.core does not exist
+    private final List<am.ik.yavi.core.ConstraintViolations> constraintViolations;
+                                      ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ConstraintViolation.java:3: error: package am.ik.yavi.core does not exist
+  import am.ik.yavi.core.ViolationDetail;
+                        ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ConstraintViolations.java:13: error: package am.ik.yavi.core does not exist
+    public ConstraintViolations(am.ik.yavi.core.ConstraintViolations constraintViolations) {
+                                               ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ConstraintViolations.java:21: error: package am.ik.yavi.core does not exist
+    public ConstraintViolations(List<am.ik.yavi.core.ConstraintViolations> constraintViolations) {
+                                                    ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ConstraintViolations.java:33: error: package am.ik.yavi.core does not exist
+    List<am.ik.yavi.core.ConstraintViolations> _raw() {
+                        ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ConstraintViolation.java:11: error: package am.ik.yavi.core does not exist
+    private final am.ik.yavi.core.ConstraintViolation constraintViolation;
+                                 ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ConstraintViolation.java:13: error: package am.ik.yavi.core does not exist
+    public ConstraintViolation(am.ik.yavi.core.ConstraintViolation constraintViolation) {
+                                              ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ConstraintViolation.java:56: error: package am.ik.yavi.core does not exist
+    public am.ik.yavi.core.ConstraintViolation rename(Function<? super String, String> rename) {
+                          ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\validation\ConstraintViolation.java:60: error: package am.ik.yavi.core does not exist
+    public am.ik.yavi.core.ConstraintViolation indexed(int index) {
+                          ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\command\UpdateEntityCommand.java:7: error: package org.jetbrains.annotations does not exist
+  import org.jetbrains.annotations.NotNull;
+                                  ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\domain\MoneyServiceFactory.java:5: error: package org.apache.commons.collections4.map does not exist
+  import org.apache.commons.collections4.map.CaseInsensitiveMap;
+                                            ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\event\AppEventListener.java:4: error: package com.ttl.common.log does not exist
+  import com.ttl.common.log.Logger;
+                           ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\event\AppEventListener.java:5: error: package com.ttl.common.log does not exist
+  import com.ttl.common.log.LoggerFactory;
+                           ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\util\BatchUtil.java:7: error: package org.apache.commons.collections4 does not exist
+  import org.apache.commons.collections4.ListUtils;
+                                        ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\util\BooleanUtil.java:10: error: package org.apache.commons.lang3 does not exist
+  import org.apache.commons.lang3.BooleanUtils;
+                                 ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\util\CollectionUtil.java:15: error: package org.apache.commons.collections does not exist
+  import org.apache.commons.collections.CollectionUtils;
+                                       ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\util\DateUtil.java:10: error: package org.apache.commons.lang3.time does not exist
+  import org.apache.commons.lang3.time.DateFormatUtils;
+                                      ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\util\HtmlUtil.java:3: error: package org.jsoup does not exist
+  import org.jsoup.Jsoup;
+                  ^
+  100 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to generate a Build Scan (powered by Develocity).
+
+BUILD FAILED in 8s
+10 actionable tasks: 9 executed, 1 up-to-date

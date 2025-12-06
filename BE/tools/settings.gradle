@@ -1,0 +1,18 @@
+rootProject.name = 'tool'
+
+// Include common project as composite build
+includeBuild('../common')
+
+// Include all modules
+include 'base'
+include 'core'
+include 'domain'
+include 'shared'
+include 'api'
+
+// Map the logical names to actual directory names
+project(':base').projectDir = file('1-base')
+project(':core').projectDir = file('1-core')
+project(':domain').projectDir = file('1-domain')
+project(':shared').projectDir = file('1-shared')
+project(':api').projectDir = file('5-api')

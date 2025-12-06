@@ -1,0 +1,24 @@
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+	// Depend on base for JPA configuration
+	api project(':base')
+	
+	// Spring Boot Web
+	api 'org.springframework.boot:spring-boot-starter-web'
+	
+	// Spring Context
+	api 'org.springframework:spring-context'
+	
+	// YAVI - Yet Another Validation library for Java
+	api 'am.ik.yavi:yavi:0.14.1'
+}
+
+// Common core module is a library, not a bootable application
+bootJar {
+	enabled = false
+}
+
+jar {
+	enabled = true
+}

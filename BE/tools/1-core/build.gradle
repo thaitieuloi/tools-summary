@@ -1,0 +1,25 @@
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+	// Depend on common graphql for GraphQL configurations
+	api 'com.ttl.common:graphql'
+	// Depend on domain and shared modules
+	implementation project(':domain')
+	implementation project(':shared')
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	
+	// Testing
+	testImplementation 'org.springframework.graphql:spring-graphql-test'
+
+	// YAVI Validation
+	implementation 'am.ik.yavi:yavi:0.14.1'
+}
+
+// Core module is a library, not a bootable application
+bootJar {
+	enabled = false
+}
+
+jar {
+	enabled = true
+}

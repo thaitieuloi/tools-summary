@@ -1,0 +1,33 @@
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+	// Depend on core for core configurations
+	api project(':core')
+	
+	// SPQR for GraphQL configuration
+	api 'io.leangen.graphql:graphql-spqr-spring-boot-starter:1.0.1'
+	// Force older graphql-java version compatible with SPQR
+	api 'com.graphql-java:graphql-java:20.0'
+	
+	// GraphQL Scalars
+	api 'com.graphql-java:graphql-java-extended-scalars:20.0'
+	
+	// Spring Context
+	api 'org.springframework:spring-context'
+}
+
+configurations.all {
+	resolutionStrategy {
+		force 'com.graphql-java:graphql-java:20.0'
+		force 'com.graphql-java:graphql-java-extended-scalars:20.0'
+	}
+}
+
+// Common graphql module is a library, not a bootable application
+bootJar {
+	enabled = false
+}
+
+jar {
+	enabled = true
+}

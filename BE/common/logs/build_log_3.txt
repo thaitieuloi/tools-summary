@@ -1,0 +1,44 @@
+> Task :clean
+> Task :base:clean
+> Task :core:clean UP-TO-DATE
+> Task :graphql:clean UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :jar
+> Task :assemble
+> Task :check
+> Task :build
+
+> Task :base:compileJava FAILED
+D:\CNTT\tool\BE\common\0-base\src\main\java\com\ttl\common\base\JpaCommonConfig.java:3: error: package org.springframework.boot.autoconfigure.domain does not exist
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+                                                    ^
+D:\CNTT\tool\BE\common\0-base\src\main\java\com\ttl\common\base\JpaCommonConfig.java:15: error: cannot find symbol
+@EntityScan(basePackages = "com.ttl.**.entity")
+ ^
+  symbol: class EntityScan
+2 errors
+
+[Incubating] Problems report is available at: file:///D:/CNTT/tool/BE/common/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':base:compileJava'.
+> Compilation failed; see the compiler output below.
+  D:\CNTT\tool\BE\common\0-base\src\main\java\com\ttl\common\base\JpaCommonConfig.java:15: error: cannot find symbol
+  @EntityScan(basePackages = "com.ttl.**.entity")
+   ^
+    symbol: class EntityScan
+  D:\CNTT\tool\BE\common\0-base\src\main\java\com\ttl\common\base\JpaCommonConfig.java:3: error: package org.springframework.boot.autoconfigure.domain does not exist
+  import org.springframework.boot.autoconfigure.domain.EntityScan;
+                                                      ^
+  2 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to generate a Build Scan (powered by Develocity).
+
+BUILD FAILED in 4s
+6 actionable tasks: 4 executed, 2 up-to-date

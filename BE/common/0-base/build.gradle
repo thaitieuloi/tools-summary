@@ -1,0 +1,21 @@
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+	// Spring Boot autoconfigure for EntityScan
+	api 'org.springframework.boot:spring-boot-autoconfigure'
+	
+	// Spring Data JPA for entity configuration
+	api 'org.springframework.boot:spring-boot-starter-data-jpa'
+	
+	// Spring Context
+	api 'org.springframework:spring-context'
+}
+
+// Common base module is a library, not a bootable application
+bootJar {
+	enabled = false
+}
+
+jar {
+	enabled = true
+}

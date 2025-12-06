@@ -1,0 +1,93 @@
+> Task :clean
+> Task :base:clean
+> Task :core:clean
+> Task :graphql:clean UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :jar
+> Task :assemble
+> Task :check
+> Task :build
+
+> Task :base:compileJava
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :base:processResources
+> Task :base:classes
+> Task :base:resolveMainClassName
+> Task :base:bootJar SKIPPED
+> Task :base:jar
+> Task :base:assemble
+> Task :base:check
+> Task :base:build
+
+> Task :core:compileJava FAILED
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\boot\CommonCoreConfigBoot.java:3: error: package com.ttl.common.core.event does not exist
+import com.ttl.common.core.event.AppEventPublisher;
+                                ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\boot\CommonCoreConfigBoot.java:4: error: package com.ttl.common.core.mapping does not exist
+import com.ttl.common.core.mapping.BeanMapper;
+                                  ^
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\boot\CommonCoreConfigBoot.java:16: error: cannot find symbol
+  public BeanMapper beanMapper() {
+         ^
+  symbol:   class BeanMapper
+  location: class CommonCoreConfigBoot
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\boot\CommonCoreConfigBoot.java:21: error: cannot find symbol
+  public AppEventPublisher appEventPublisher(ApplicationContext applicationContext) {
+         ^
+  symbol:   class AppEventPublisher
+  location: class CommonCoreConfigBoot
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\CoreCommonConfig.java:3: error: cannot find symbol
+import com.ttl.common.base.JpaCommonConfig;
+                          ^
+  symbol:   class JpaCommonConfig
+  location: package com.ttl.common.base
+D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\CoreCommonConfig.java:14: error: cannot find symbol
+@Import(JpaCommonConfig.class)
+        ^
+  symbol: class JpaCommonConfig
+6 errors
+
+[Incubating] Problems report is available at: file:///D:/CNTT/tool/BE/common/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':core:compileJava'.
+> Compilation failed; see the compiler output below.
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\boot\CommonCoreConfigBoot.java:16: error: cannot find symbol
+    public BeanMapper beanMapper() {
+           ^
+    symbol:   class BeanMapper
+    location: class CommonCoreConfigBoot
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\boot\CommonCoreConfigBoot.java:21: error: cannot find symbol
+    public AppEventPublisher appEventPublisher(ApplicationContext applicationContext) {
+           ^
+    symbol:   class AppEventPublisher
+    location: class CommonCoreConfigBoot
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\CoreCommonConfig.java:3: error: cannot find symbol
+  import com.ttl.common.base.JpaCommonConfig;
+                            ^
+    symbol:   class JpaCommonConfig
+    location: package com.ttl.common.base
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\common\core\CoreCommonConfig.java:14: error: cannot find symbol
+  @Import(JpaCommonConfig.class)
+          ^
+    symbol: class JpaCommonConfig
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\boot\CommonCoreConfigBoot.java:3: error: package com.ttl.common.core.event does not exist
+  import com.ttl.common.core.event.AppEventPublisher;
+                                  ^
+  D:\CNTT\tool\BE\common\1-core\src\main\java\com\ttl\boot\CommonCoreConfigBoot.java:4: error: package com.ttl.common.core.mapping does not exist
+  import com.ttl.common.core.mapping.BeanMapper;
+                                    ^
+  6 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to generate a Build Scan (powered by Develocity).
+
+BUILD FAILED in 6s
+10 actionable tasks: 9 executed, 1 up-to-date

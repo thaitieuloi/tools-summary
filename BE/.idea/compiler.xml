@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.42/8365263844ebb62398e0dc33057ba10ba472d3b8/lombok-1.18.42.jar" />
+        </processorPath>
+        <module name="tool.base.main" />
+        <module name="com.ttl.tool.tool.api.main" />
+        <module name="com.ttl.tool.tool.shared.main" />
+        <module name="com.ttl.tool.tool.core.main" />
+        <module name="com.ttl.tool.tool.domain.main" />
+      </profile>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.36/5a30490a6e14977d97d9c73c924c1f1b5311ea95/lombok-1.18.36.jar" />
+        </processorPath>
+        <module name="common.graphql.main" />
+        <module name="common.base.main" />
+        <module name="common.core.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="tool.api" target="17" />
+      <module name="tool.api.main" target="17" />
+      <module name="tool.api.test" target="17" />
+      <module name="tool.common" target="17" />
+      <module name="tool.common.main" target="17" />
+      <module name="tool.common.test" target="17" />
+      <module name="tool.core" target="17" />
+      <module name="tool.core.main" target="17" />
+      <module name="tool.core.test" target="17" />
+      <module name="tool.domain" target="17" />
+      <module name="tool.domain.main" target="17" />
+      <module name="tool.domain.test" target="17" />
+      <module name="tool.shared" target="17" />
+      <module name="tool.shared.main" target="17" />
+      <module name="tool.shared.test" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="com.ttl.tool.tool.api.main" options="-parameters" />
+      <module name="com.ttl.tool.tool.api.test" options="-parameters" />
+      <module name="com.ttl.tool.tool.core.main" options="-parameters" />
+      <module name="com.ttl.tool.tool.core.test" options="-parameters" />
+      <module name="com.ttl.tool.tool.domain.main" options="-parameters" />
+      <module name="com.ttl.tool.tool.domain.test" options="-parameters" />
+      <module name="com.ttl.tool.tool.shared.main" options="-parameters" />
+      <module name="com.ttl.tool.tool.shared.test" options="-parameters" />
+      <module name="common.base" options="-parameters" />
+      <module name="common.base.main" options="-parameters" />
+      <module name="common.base.test" options="-parameters" />
+      <module name="common.core" options="-parameters" />
+      <module name="common.core.main" options="-parameters" />
+      <module name="common.core.test" options="-parameters" />
+      <module name="common.graphql" options="-parameters" />
+      <module name="common.graphql.main" options="-parameters" />
+      <module name="common.graphql.test" options="-parameters" />
+      <module name="tool.api" options="-parameters" />
+      <module name="tool.api.main" options="-parameters" />
+      <module name="tool.api.test" options="-parameters" />
+      <module name="tool.base" options="-parameters" />
+      <module name="tool.base.main" options="-parameters" />
+      <module name="tool.base.test" options="-parameters" />
+      <module name="tool.common" options="-parameters" />
+      <module name="tool.common.main" options="-parameters" />
+      <module name="tool.common.test" options="-parameters" />
+      <module name="tool.core" options="-parameters" />
+      <module name="tool.core.main" options="-parameters" />
+      <module name="tool.core.test" options="-parameters" />
+      <module name="tool.domain" options="-parameters" />
+      <module name="tool.domain.main" options="-parameters" />
+      <module name="tool.domain.test" options="-parameters" />
+      <module name="tool.shared" options="-parameters" />
+      <module name="tool.shared.main" options="-parameters" />
+      <module name="tool.shared.test" options="-parameters" />
+    </option>
+  </component>
+</project>

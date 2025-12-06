@@ -1,0 +1,178 @@
+> Task :common:base:compileJava UP-TO-DATE
+> Task :domain:compileJava UP-TO-DATE
+> Task :shared:compileJava UP-TO-DATE
+> Task :api:processResources UP-TO-DATE
+> Task :core:processResources NO-SOURCE
+> Task :domain:processResources NO-SOURCE
+> Task :domain:classes UP-TO-DATE
+> Task :domain:jar UP-TO-DATE
+> Task :shared:processResources NO-SOURCE
+> Task :shared:classes UP-TO-DATE
+> Task :shared:jar UP-TO-DATE
+> Task :common:core:compileJava UP-TO-DATE
+> Task :common:graphql:compileJava UP-TO-DATE
+> Task :common:graphql:processResources NO-SOURCE
+> Task :common:graphql:classes UP-TO-DATE
+> Task :core:compileJava UP-TO-DATE
+> Task :common:graphql:jar UP-TO-DATE
+> Task :common:core:processResources UP-TO-DATE
+> Task :api:compileJava UP-TO-DATE
+> Task :common:core:classes UP-TO-DATE
+> Task :api:classes UP-TO-DATE
+> Task :api:resolveMainClassName UP-TO-DATE
+> Task :core:classes UP-TO-DATE
+> Task :core:jar UP-TO-DATE
+> Task :common:core:jar UP-TO-DATE
+> Task :common:base:processResources UP-TO-DATE
+> Task :common:base:classes UP-TO-DATE
+> Task :common:base:jar UP-TO-DATE
+
+> Task :api:bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.0)
+
+2025-11-30T11:23:49.263+07:00  INFO 103636 --- [tool] [  restartedMain] com.ttl.tool.api.ToolApiApplication      : Starting ToolApiApplication using Java 17.0.12 with PID 103636 (D:\CNTT\tool\BE\tools\5-api\build\classes\java\main started by AZ in D:\CNTT\tool\BE\tools\5-api)
+2025-11-30T11:23:49.267+07:00  INFO 103636 --- [tool] [  restartedMain] com.ttl.tool.api.ToolApiApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-11-30T11:23:49.308+07:00  INFO 103636 --- [tool] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-30T11:23:49.308+07:00  INFO 103636 --- [tool] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-30T11:23:49.652+07:00  INFO 103636 --- [tool] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-30T11:23:49.783+07:00  INFO 103636 --- [tool] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 123 ms. Found 1 JPA repository interface.
+2025-11-30T11:23:50.463+07:00  INFO 103636 --- [tool] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-11-30T11:23:50.472+07:00  INFO 103636 --- [tool] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-30T11:23:50.474+07:00  INFO 103636 --- [tool] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-11-30T11:23:50.508+07:00  INFO 103636 --- [tool] [  restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1200 ms
+2025-11-30T11:23:50.627+07:00  INFO 103636 --- [tool] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-30T11:23:50.758+07:00  INFO 103636 --- [tool] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5288646b
+2025-11-30T11:23:50.759+07:00  INFO 103636 --- [tool] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-30T11:23:50.896+07:00  INFO 103636 --- [tool] [  restartedMain] liquibase.database                       : Set default schema name to public
+2025-11-30T11:23:51.172+07:00  INFO 103636 --- [tool] [  restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-11-30T11:23:51.196+07:00  INFO 103636 --- [tool] [  restartedMain] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-11-30T11:23:51.197+07:00  INFO 103636 --- [tool] [  restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-11-30T11:23:51.203+07:00  INFO 103636 --- [tool] [  restartedMain] liquibase.util                           : UPDATE SUMMARY
+2025-11-30T11:23:51.203+07:00  INFO 103636 --- [tool] [  restartedMain] liquibase.util                           : Run:                          0
+2025-11-30T11:23:51.204+07:00  INFO 103636 --- [tool] [  restartedMain] liquibase.util                           : Previously run:               0
+2025-11-30T11:23:51.204+07:00  INFO 103636 --- [tool] [  restartedMain] liquibase.util                           : Filtered out:                 0
+2025-11-30T11:23:51.204+07:00  INFO 103636 --- [tool] [  restartedMain] liquibase.util                           : -------------------------------
+2025-11-30T11:23:51.204+07:00  INFO 103636 --- [tool] [  restartedMain] liquibase.util                           : Total change sets:            0
+2025-11-30T11:23:51.205+07:00  INFO 103636 --- [tool] [  restartedMain] liquibase.util                           : Update summary generated
+2025-11-30T11:23:51.205+07:00  INFO 103636 --- [tool] [  restartedMain] liquibase.command                        : Command execution complete
+2025-11-30T11:23:52.612+07:00  INFO 103636 --- [tool] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-30T11:23:52.656+07:00  INFO 103636 --- [tool] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
+2025-11-30T11:23:53.263+07:00  INFO 103636 --- [tool] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-30T11:23:53.368+07:00  INFO 103636 --- [tool] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/tool]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.3
+	Default catalog/schema: tool/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-30T11:23:53.979+07:00  INFO 103636 --- [tool] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-30T11:23:53.991+07:00  INFO 103636 --- [tool] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-30T11:23:54.085+07:00  INFO 103636 --- [tool] [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-11-30T11:23:54.105+07:00  WARN 103636 --- [tool] [  restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userGraphQLApi' defined in URL [jar:file:/D:/CNTT/tool/BE/tools/1-core/build/libs/core-0.0.1-SNAPSHOT-plain.jar!/com/ttl/tool/core/graphql/UserGraphQLApi.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userService' defined in URL [jar:file:/D:/CNTT/tool/BE/tools/1-core/build/libs/core-0.0.1-SNAPSHOT-plain.jar!/com/ttl/tool/core/service/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in com.ttl.tool.domain.repository.UserRepository defined in @EnableJpaRepositories declared on JpaCommonConfig: Not a managed type: class com.ttl.tool.domain.entity.User
+2025-11-30T11:23:54.106+07:00  INFO 103636 --- [tool] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-30T11:23:54.109+07:00  INFO 103636 --- [tool] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-30T11:23:54.111+07:00  INFO 103636 --- [tool] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-30T11:23:54.116+07:00  INFO 103636 --- [tool] [  restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-11-30T11:23:54.123+07:00  INFO 103636 --- [tool] [  restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-11-30T11:23:54.137+07:00 ERROR 103636 --- [tool] [  restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userGraphQLApi' defined in URL [jar:file:/D:/CNTT/tool/BE/tools/1-core/build/libs/core-0.0.1-SNAPSHOT-plain.jar!/com/ttl/tool/core/graphql/UserGraphQLApi.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userService' defined in URL [jar:file:/D:/CNTT/tool/BE/tools/1-core/build/libs/core-0.0.1-SNAPSHOT-plain.jar!/com/ttl/tool/core/service/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in com.ttl.tool.domain.repository.UserRepository defined in @EnableJpaRepositories declared on JpaCommonConfig: Not a managed type: class com.ttl.tool.domain.entity.User
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1382) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1221) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1218) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1184) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:983) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:620) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:765) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:454) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1374) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-4.0.0.jar:4.0.0]
+	at com.ttl.tool.api.ToolApiApplication.main(ToolApiApplication.java:18) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52) ~[spring-boot-devtools-4.0.0.jar:4.0.0]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in URL [jar:file:/D:/CNTT/tool/BE/tools/1-core/build/libs/core-0.0.1-SNAPSHOT-plain.jar!/com/ttl/tool/core/service/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in com.ttl.tool.domain.repository.UserRepository defined in @EnableJpaRepositories declared on JpaCommonConfig: Not a managed type: class com.ttl.tool.domain.entity.User
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1382) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1221) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:1225) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1704) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1651) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:912) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-7.0.1.jar:7.0.1]
+	... 26 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.ttl.tool.domain.repository.UserRepository defined in @EnableJpaRepositories declared on JpaCommonConfig: Not a managed type: class com.ttl.tool.domain.entity.User
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1817) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:1225) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1704) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1651) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:912) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-7.0.1.jar:7.0.1]
+	... 40 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.ttl.tool.domain.entity.User
+	at org.hibernate.metamodel.model.domain.internal.JpaMetamodelImpl.managedType(JpaMetamodelImpl.java:247) ~[hibernate-core-7.1.8.Final.jar:7.1.8.Final]
+	at org.hibernate.metamodel.model.domain.internal.MappingMetamodelImpl.managedType(MappingMetamodelImpl.java:413) ~[hibernate-core-7.1.8.Final.jar:7.1.8.Final]
+	at org.hibernate.metamodel.model.domain.internal.MappingMetamodelImpl.managedType(MappingMetamodelImpl.java:88) ~[hibernate-core-7.1.8.Final.jar:7.1.8.Final]
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:92) ~[spring-data-jpa-4.0.0.jar:4.0.0]
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:73) ~[spring-data-jpa-4.0.0.jar:4.0.0]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:270) ~[spring-data-jpa-4.0.0.jar:4.0.0]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getRepositoryFragments(JpaRepositoryFactory.java:300) ~[spring-data-jpa-4.0.0.jar:4.0.0]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getRepositoryFragments(JpaRepositoryFactory.java:280) ~[spring-data-jpa-4.0.0.jar:4.0.0]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.lambda$getRepositoryStub$0(RepositoryFactorySupport.java:505) ~[spring-data-commons-4.0.0.jar:4.0.0]
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220) ~[na:na]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepositoryStub(RepositoryFactorySupport.java:502) ~[spring-data-commons-4.0.0.jar:4.0.0]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:338) ~[spring-data-commons-4.0.0.jar:4.0.0]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$1(RepositoryFactoryBeanSupport.java:351) ~[spring-data-commons-4.0.0.jar:4.0.0]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:136) ~[spring-data-commons-4.0.0.jar:4.0.0]
+	at org.springframework.data.util.Lazy.get(Lazy.java:114) ~[spring-data-commons-4.0.0.jar:4.0.0]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:360) ~[spring-data-commons-4.0.0.jar:4.0.0]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:212) ~[spring-data-jpa-4.0.0.jar:4.0.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1864) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813) ~[spring-beans-7.0.1.jar:7.0.1]
+	... 51 common frames omitted
+
+
+BUILD SUCCESSFUL in 9s
+18 actionable tasks: 1 executed, 17 up-to-date
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.2.1/userguide/configuration_cache_enabling.html

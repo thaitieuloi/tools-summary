@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/BE.iml" filepath="$PROJECT_DIR$/.idea/BE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/5-api/com.ttl.tool.tool.api.main.iml" filepath="$PROJECT_DIR$/.idea/modules/5-api/com.ttl.tool.tool.api.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1-core/com.ttl.tool.tool.core.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1-core/com.ttl.tool.tool.core.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1-domain/com.ttl.tool.tool.domain.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1-domain/com.ttl.tool.tool.domain.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1-shared/com.ttl.tool.tool.shared.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1-shared/com.ttl.tool.tool.shared.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2083792846/common.base.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-2083792846/common.base.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2055120481/common.core.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-2055120481/common.core.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1817233174/common.graphql.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1817233174/common.graphql.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1-base/tool.base.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1-base/tool.base.main.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,258 @@
+> Task :clean
+> Task :base:clean
+> Task :core:clean
+> Task :graphql:clean
+> Task :compileJava NO-SOURCE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :jar
+> Task :assemble
+> Task :check
+> Task :build
+> Task :base:compileJava
+> Task :base:processResources
+> Task :base:classes
+> Task :base:resolveMainClassName
+> Task :base:bootJar SKIPPED
+> Task :base:jar
+> Task :base:assemble
+> Task :base:check
+> Task :base:build
+> Task :core:compileJava
+> Task :core:processResources
+> Task :core:classes
+> Task :core:resolveMainClassName
+> Task :core:bootJar SKIPPED
+> Task :core:jar
+> Task :core:assemble
+> Task :core:check
+> Task :core:build
+
+> Task :graphql:compileJava FAILED
+D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:3: error: package com.ttl.common.core.mapping does not exist
+import com.ttl.common.core.mapping.BeanMapper;
+                                  ^
+D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:4: error: package com.ttl.common.core.util does not exist
+import com.ttl.common.core.util.CollectionUtil;
+                               ^
+D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:5: error: package com.ttl.common.graphql.exception does not exist
+import com.ttl.common.graphql.exception.GQLDataFetcherExceptionHandler;
+                                       ^
+D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:6: error: package com.ttl.common.graphql.injector does not exist
+import com.ttl.common.graphql.injector.InfoArgumentInjector;
+                                      ^
+D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:7: error: package com.ttl.common.graphql.injector does not exist
+import com.ttl.common.graphql.injector.RootInputArgumentInjector;
+                                      ^
+D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:8: error: package com.ttl.common.graphql.mapper does not exist
+import com.ttl.common.graphql.mapper.ObjectScalarJsonTypeMapper;
+                                    ^
+D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:9: error: package com.ttl.common.json does not exist
+import com.ttl.common.json.StandardObjectMapperFactory;
+                          ^
+D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:30: error: package org.springframework.context.annotation does not exist
+import org.springframework.context.annotation.Bean;
+                                             ^
+D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:31: error: package org.springframework.context.annotation does not exist
+import org.springframework.context.annotation.Configuration;
+                                             ^
+D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:33: error: cannot find symbol
+@Configuration
+ ^
+  symbol: class Configuration
+D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:96: error: cannot find symbol
+  public ExtensionProvider<GeneratorConfiguration, ArgumentInjector> graphqlInjectors(BeanMapper beanMapper) {
+                                                                                      ^
+  symbol:   class BeanMapper
+  location: class CommonGraphqlConfigBoot
+D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\graphql\GraphQLCommonConfig.java:6: error: package org.springframework.context.annotation does not exist
+import org.springframework.context.annotation.Bean;
+                                             ^
+D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\graphql\GraphQLCommonConfig.java:7: error: package org.springframework.context.annotation does not exist
+import org.springframework.context.annotation.ComponentScan;
+                                             ^
+D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\graphql\GraphQLCommonConfig.java:8: error: package org.springframework.context.annotation does not exist
+import org.springframework.context.annotation.Configuration;
+                                             ^
+D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\graphql\GraphQLCommonConfig.java:9: error: package org.springframework.context.annotation does not exist
+import org.springframework.context.annotation.Import;
+                                             ^
+D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\graphql\GraphQLCommonConfig.java:17: error: cannot find symbol
+@Configuration
+ ^
+  symbol: class Configuration
+D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\graphql\GraphQLCommonConfig.java:18: error: cannot find symbol
+@ComponentScan(basePackages = "com.ttl.common.graphql")
+ ^
+  symbol: class ComponentScan
+D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\graphql\GraphQLCommonConfig.java:19: error: cannot find symbol
+@Import(CoreCommonConfig.class)
+ ^
+  symbol: class Import
+D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:36: error: cannot find symbol
+  @Bean
+   ^
+  symbol:   class Bean
+  location: class CommonGraphqlConfigBoot
+D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:76: error: cannot find symbol
+  @Bean
+   ^
+  symbol:   class Bean
+  location: class CommonGraphqlConfigBoot
+D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:81: error: cannot find symbol
+  @Bean
+   ^
+  symbol:   class Bean
+  location: class CommonGraphqlConfigBoot
+D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:88: error: cannot find symbol
+  @Bean
+   ^
+  symbol:   class Bean
+  location: class CommonGraphqlConfigBoot
+D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:95: error: cannot find symbol
+  @Bean
+   ^
+  symbol:   class Bean
+  location: class CommonGraphqlConfigBoot
+D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:102: error: cannot find symbol
+  @Bean
+   ^
+  symbol:   class Bean
+  location: class CommonGraphqlConfigBoot
+D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\graphql\GraphQLCommonConfig.java:25: error: cannot find symbol
+    @Bean
+     ^
+  symbol:   class Bean
+  location: class GraphQLCommonConfig
+D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\graphql\GraphQLCommonConfig.java:33: error: cannot find symbol
+    @Bean
+     ^
+  symbol:   class Bean
+  location: class GraphQLCommonConfig
+D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\graphql\GraphQLCommonConfig.java:41: error: cannot find symbol
+    @Bean
+     ^
+  symbol:   class Bean
+  location: class GraphQLCommonConfig
+27 errors
+
+[Incubating] Problems report is available at: file:///D:/CNTT/tool/BE/common/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':graphql:compileJava'.
+> Compilation failed; see the compiler output below.
+  D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:96: error: cannot find symbol
+    public ExtensionProvider<GeneratorConfiguration, ArgumentInjector> graphqlInjectors(BeanMapper beanMapper) {
+                                                                                        ^
+    symbol:   class BeanMapper
+    location: class CommonGraphqlConfigBoot
+  D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:36: error: cannot find symbol
+    @Bean
+     ^
+    symbol:   class Bean
+    location: class CommonGraphqlConfigBoot
+  D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:76: error: cannot find symbol
+    @Bean
+     ^
+    symbol:   class Bean
+    location: class CommonGraphqlConfigBoot
+  D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:81: error: cannot find symbol
+    @Bean
+     ^
+    symbol:   class Bean
+    location: class CommonGraphqlConfigBoot
+  D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:88: error: cannot find symbol
+    @Bean
+     ^
+    symbol:   class Bean
+    location: class CommonGraphqlConfigBoot
+  D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:95: error: cannot find symbol
+    @Bean
+     ^
+    symbol:   class Bean
+    location: class CommonGraphqlConfigBoot
+  D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:102: error: cannot find symbol
+    @Bean
+     ^
+    symbol:   class Bean
+    location: class CommonGraphqlConfigBoot
+  D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\graphql\GraphQLCommonConfig.java:25: error: cannot find symbol
+      @Bean
+       ^
+    symbol:   class Bean
+    location: class GraphQLCommonConfig
+  D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\graphql\GraphQLCommonConfig.java:33: error: cannot find symbol
+      @Bean
+       ^
+    symbol:   class Bean
+    location: class GraphQLCommonConfig
+  D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\graphql\GraphQLCommonConfig.java:41: error: cannot find symbol
+      @Bean
+       ^
+    symbol:   class Bean
+    location: class GraphQLCommonConfig
+  D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:33: error: cannot find symbol
+  @Configuration
+   ^
+    symbol: class Configuration
+  D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\graphql\GraphQLCommonConfig.java:17: error: cannot find symbol
+  @Configuration
+   ^
+    symbol: class Configuration
+  D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\graphql\GraphQLCommonConfig.java:18: error: cannot find symbol
+  @ComponentScan(basePackages = "com.ttl.common.graphql")
+   ^
+    symbol: class ComponentScan
+  D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\graphql\GraphQLCommonConfig.java:19: error: cannot find symbol
+  @Import(CoreCommonConfig.class)
+   ^
+    symbol: class Import
+  D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:3: error: package com.ttl.common.core.mapping does not exist
+  import com.ttl.common.core.mapping.BeanMapper;
+                                    ^
+  D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:4: error: package com.ttl.common.core.util does not exist
+  import com.ttl.common.core.util.CollectionUtil;
+                                 ^
+  D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:5: error: package com.ttl.common.graphql.exception does not exist
+  import com.ttl.common.graphql.exception.GQLDataFetcherExceptionHandler;
+                                         ^
+  D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:6: error: package com.ttl.common.graphql.injector does not exist
+  import com.ttl.common.graphql.injector.InfoArgumentInjector;
+                                        ^
+  D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:7: error: package com.ttl.common.graphql.injector does not exist
+  import com.ttl.common.graphql.injector.RootInputArgumentInjector;
+                                        ^
+  D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:8: error: package com.ttl.common.graphql.mapper does not exist
+  import com.ttl.common.graphql.mapper.ObjectScalarJsonTypeMapper;
+                                      ^
+  D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:9: error: package com.ttl.common.json does not exist
+  import com.ttl.common.json.StandardObjectMapperFactory;
+                            ^
+  D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:30: error: package org.springframework.context.annotation does not exist
+  import org.springframework.context.annotation.Bean;
+                                               ^
+  D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\boot\CommonGraphqlConfigBoot.java:31: error: package org.springframework.context.annotation does not exist
+  import org.springframework.context.annotation.Configuration;
+                                               ^
+  D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\graphql\GraphQLCommonConfig.java:6: error: package org.springframework.context.annotation does not exist
+  import org.springframework.context.annotation.Bean;
+                                               ^
+  D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\graphql\GraphQLCommonConfig.java:7: error: package org.springframework.context.annotation does not exist
+  import org.springframework.context.annotation.ComponentScan;
+                                               ^
+  D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\graphql\GraphQLCommonConfig.java:8: error: package org.springframework.context.annotation does not exist
+  import org.springframework.context.annotation.Configuration;
+                                               ^
+  D:\CNTT\tool\BE\common\2-graphql\src\main\java\com\ttl\common\graphql\GraphQLCommonConfig.java:9: error: package org.springframework.context.annotation does not exist
+  import org.springframework.context.annotation.Import;
+                                               ^
+  27 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to generate a Build Scan (powered by Develocity).
+
+BUILD FAILED in 9s
+14 actionable tasks: 14 executed
