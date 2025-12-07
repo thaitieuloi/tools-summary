@@ -1,0 +1,20 @@
+rootProject.name = 'notification'
+
+// Include common project as composite build
+includeBuild('../common')
+
+// Include all modules
+include 'base'
+include 'core'
+include 'shared'
+include 'api'
+include 'migrated-api'
+include 'migrated-db'
+
+// Map the logical names to actual directory names
+project(':base').projectDir = file('0-base')
+project(':core').projectDir = file('1-core')
+project(':shared').projectDir = file('1-shared')
+project(':api').projectDir = file('5-api')
+project(':migrated-api').projectDir = file('5-migrated-api')
+project(':migrated-db').projectDir = file('5-migrated-db')

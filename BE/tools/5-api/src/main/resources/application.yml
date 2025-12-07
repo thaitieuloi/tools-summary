@@ -2,6 +2,10 @@ spring:
   application:
     name: tool
 
+  # Disable Liquibase - migrations are handled by migrated-db module
+  liquibase:
+    enabled: false
+
   datasource:
     url: jdbc:postgresql://localhost:5432/tool
     username: postgres
@@ -17,8 +21,6 @@ spring:
         archive:
           autodetection: class
 
-  liquibase:
-    change-log: classpath:/db/changelog/db.changelog-master.xml
 
 graphql:
   spqr:

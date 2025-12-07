@@ -1,0 +1,45 @@
+import io.github.kobylynskyi.graphql.codegen.gradle.GraphQLCodegenGradleTask
+
+plugins {
+    id "io.github.kobylynskyi.graphql.codegen" version "5.10.0"
+}
+
+version = "${version}"
+
+
+dependencies {
+    implementation "io.github.kobylynskyi:graphql-java-codegen:5.10.0"
+    implementation project(path: ':workspace:common:1-core', configuration: 'default')
+}
+
+tasks.register('genGraphqlJavaClasses', GraphQLCodegenGradleTask) {
+    doLast {
+        String graphqlQueryIntrospectionResultUri = "http://localhost:8081/pub/api/v1/graphql/schema.json"
+
+        File file = resources.text.fromInsecureUri(graphqlQueryIntrospectionResultUri).asFile();
+        graphqlQueryIntrospectionResultPath(file.getAbsolutePath())
+
+        String path = "${project.layout.projectDirectory}/src/main/java"
+        outputDir = new File(path)
+
+        generateApis = false
+        generateClient = true
+        generateParameterizedFieldsResolvers = false
+        modelValidationAnnotation = ""// empty to disable validation annotation adding
+        addGeneratedAnnotation = false
+        generateToString = false
+        customTypesMapping = [
+                "Instant"                                             : "java.time.Instant",
+                "TSearchInput.filters"                                : "com.glohow.common.core.search.Filters",
+                "TPersonalNotificationWithSubscriberListInput.filters": "com.glohow.common.core.search.Filters"
+        ]
+        useObjectMapperForRequestSerialization = [
+                "Instant",
+                "TSearchInput.filters",
+                "TPersonalNotificationWithSubscriberListInput.filters"
+        ]
+
+        packageName = "com.glohow.notification.graphql.client"
+        modelPackageName = "com.glohow.notification.graphql.client.dto"
+    }
+}

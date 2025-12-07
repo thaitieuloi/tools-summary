@@ -1,0 +1,18 @@
+databaseChangeLog:
+  # Schema - All SQL files for table structures
+  
+  - include:
+      file: db/changelog/changes/v1.0/01-schema/001-create-project-table.sql
+      relativeToChangelogFile: false
+  
+  - include:
+      file: db/changelog/changes/v1.0/01-schema/002-rename-project-table.sql
+      relativeToChangelogFile: false
+  
+  - include:
+      file: db/changelog/changes/v1.0/01-schema/003-change-project-id-to-uuid.sql
+      relativeToChangelogFile: false
+  
+  - include:
+      file: db/changelog/changes/v1.0/01-schema/004-add-missing-columns.sql
+      relativeToChangelogFile: false

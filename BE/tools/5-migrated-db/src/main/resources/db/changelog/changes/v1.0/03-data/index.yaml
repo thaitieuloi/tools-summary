@@ -1,0 +1,6 @@
+databaseChangeLog:
+  # Data - All SQL files for initial/reference data
+  
+  - include:
+      file: db/changelog/changes/v1.0/03-data/001-insert-default-projects.sql
+      relativeToChangelogFile: false

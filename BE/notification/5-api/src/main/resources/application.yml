@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: notification
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/notification
+    username: postgres
+    password: 123456
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        archive:
+          autodetection: class
+
+  liquibase:
+    change-log: classpath:/db/changelog/db.changelog-master.xml
+
+server:
+  port: 8081
+
+graphql:
+  spqr:
+    http:
+      endpoint: /api/v1/graphql
+    gui:
+      enabled: true
+      endpoint: /graphiql

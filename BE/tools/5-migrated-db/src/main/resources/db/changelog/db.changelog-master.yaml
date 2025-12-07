@@ -1,0 +1,28 @@
+databaseChangeLog:
+  # Version 1.0 - Initial Schema
+  # Each folder has an index.yaml that includes all SQL files in that folder
+  
+  # 01 - Schema (Tables, Columns) - All SQL files
+  - include:
+      file: db/changelog/changes/v1.0/01-schema/index.yaml
+      relativeToChangelogFile: false
+
+  # 02 - Constraints (PKs, FKs, Unique, Indexes) - All SQL files
+  - include:
+      file: db/changelog/changes/v1.0/02-constraints/index.yaml
+      relativeToChangelogFile: false
+
+  # 03 - Data (Initial/Reference Data) - All SQL files
+  - include:
+      file: db/changelog/changes/v1.0/03-data/index.yaml
+      relativeToChangelogFile: false
+
+  # 04 - Functions (Database Functions) - All SQL files
+  - include:
+      file: db/changelog/changes/v1.0/04-function/index.yaml
+      relativeToChangelogFile: false
+
+  # 05 - Triggers (Database Triggers) - All SQL files
+  - include:
+      file: db/changelog/changes/v1.0/05-trigger/index.yaml
+      relativeToChangelogFile: false

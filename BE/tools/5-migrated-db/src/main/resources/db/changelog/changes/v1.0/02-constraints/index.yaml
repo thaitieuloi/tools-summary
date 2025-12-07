@@ -1,0 +1,6 @@
+databaseChangeLog:
+  # Constraints - All SQL files for indexes, PKs, FKs
+  
+  - include:
+      file: db/changelog/changes/v1.0/02-constraints/001-add-project-indexes.sql
+      relativeToChangelogFile: false

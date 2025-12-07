@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.27.xsd">
+
+
+  <changeSet id="86ev6ju8m" author="glohow-dean" labels="sprint-37" runOnChange="false">
+    <comment>Add lastReadAt for Subscriber</comment>
+    <sqlFile path="86ev6ju8m-AddColumnLastReadAtForsubscriber.sql"
+             relativeToChangelogFile="true"
+             endDelimiter=";"
+             splitStatements="false"
+             stripComments="true"/>
+  </changeSet>
+
+  <changeSet id="86ev6ju8m_1" author="glohow-dean" labels="sprint-37" runOnChange="false">
+    <comment>Add readOverride for NotificationMessage</comment>
+    <sqlFile path="86ev6ju8m-AddReadOverrideForNotificationMessage.sql"
+             relativeToChangelogFile="true"
+             endDelimiter=";"
+             splitStatements="false"
+             stripComments="true"/>
+  </changeSet>
+
+</databaseChangeLog>

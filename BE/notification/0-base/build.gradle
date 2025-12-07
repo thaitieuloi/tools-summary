@@ -1,0 +1,20 @@
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+	// Base depends on common base for JPA configurations
+	api 'com.ttl.common:base'
+	// Base depends on shared for DTOs
+	implementation project(':shared')
+	
+	// Spring Context for configuration
+	implementation 'org.springframework:spring-context'
+}
+
+// Base module is a library, not a bootable application
+bootJar {
+	enabled = false
+}
+
+jar {
+	enabled = true
+}

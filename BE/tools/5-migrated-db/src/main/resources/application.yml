@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: tool-migration
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tool
+    username: postgres
+    password: 123456
+    driver-class-name: org.postgresql.Driver
+
+  liquibase:
+    enabled: true
+    change-log: classpath:/db/changelog/db.changelog-master.yaml
+    default-schema: public
+    liquibase-schema: public
+    drop-first: false
+    # Validate checksum to ensure migration integrity
+    contexts: default
+
+  # Disable JPA auto-configuration since we only need migration
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
+
+logging:
+  level:
+    liquibase: DEBUG
+    com.ttl.tool.migration: DEBUG

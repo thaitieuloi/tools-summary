@@ -1,0 +1,6 @@
+databaseChangeLog:
+  # Triggers - All SQL files for database triggers
+  
+  - include:
+      file: db/changelog/changes/v1.0/05-trigger/001-create-project-update-timestamp-trigger.sql
+      relativeToChangelogFile: false

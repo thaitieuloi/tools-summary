@@ -8,6 +8,7 @@
     <persistence-unit name="default" transaction-type="RESOURCE_LOCAL">
         <!-- Explicitly list all entity classes -->
         <class>com.ttl.tool.domain.entity.User</class>
+        <class>com.ttl.tool.domain.entity.Project</class>
         
         <!-- Exclude unlisted classes to prevent automatic scanning -->
         <exclude-unlisted-classes>false</exclude-unlisted-classes>

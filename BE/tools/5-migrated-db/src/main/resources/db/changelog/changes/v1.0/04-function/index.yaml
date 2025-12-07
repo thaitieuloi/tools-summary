@@ -1,0 +1,6 @@
+databaseChangeLog:
+  # Functions - All SQL files for database functions
+  
+  - include:
+      file: db/changelog/changes/v1.0/04-function/001-create-update-timestamp-function.sql
+      relativeToChangelogFile: false

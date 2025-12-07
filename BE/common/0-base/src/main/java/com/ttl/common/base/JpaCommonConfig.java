@@ -11,6 +11,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
  */
 @Configuration
 @EnableJpaRepositories(basePackages = { "com.ttl" })
+@org.springframework.boot.autoconfigure.domain.EntityScan(basePackages = { "com.ttl" })
 @EnableJpaAuditing
 public class JpaCommonConfig {
     // JPA configuration is automatically handled by Spring Boot

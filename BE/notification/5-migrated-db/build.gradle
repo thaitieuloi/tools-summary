@@ -1,0 +1,21 @@
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+	// Depend on shared module
+	implementation project(':shared')
+	
+	// Spring Boot starters
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	
+	// PostgreSQL
+	implementation 'org.postgresql:postgresql:42.7.3'
+}
+
+// Migrated DB module is a library, not bootable
+bootJar {
+	enabled = false
+}
+
+jar {
+	enabled = true
+}

@@ -1,12 +1,17 @@
 apply plugin: 'org.springframework.boot'
 
 dependencies {
+	// Depend on base module for JPA configuration
+	implementation project(':base')
+	
 	// Depend on core module (which includes common, domain and shared)
 	implementation project(':core')
+
+	implementation project(':domain')
 	
 	// Spring Boot starters for the main application
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.springframework.boot:spring-boot-starter-liquibase'
+
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-autoconfigure'
 	

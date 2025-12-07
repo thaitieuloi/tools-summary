@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+      http://www.liquibase.org/xml/ns/dbchangelog
+      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.27.xsd">
+
+  <changeSet id="sprint-37" author="glohow-dean">
+    <tagDatabase tag="sprint-37"/>
+  </changeSet>
+
+
+  <include file="01-schema/init-schema.xml" relativeToChangelogFile="true"/>
+  <include file="02-constraints/init-constraints.xml" relativeToChangelogFile="true"/>
+  <include file="03-data/init-data.xml" relativeToChangelogFile="true"/>
+  <include file="04-migration/init-migration.xml" relativeToChangelogFile="true"/>
+  <include file="05-patches/init-patches.xml" relativeToChangelogFile="true"/>
+  <include file="06-function/init-patches.xml" relativeToChangelogFile="true"/>
+
+
+</databaseChangeLog>

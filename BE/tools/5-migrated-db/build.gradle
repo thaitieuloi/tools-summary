@@ -1,0 +1,32 @@
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+	// Spring Boot starters
+	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	
+	// PostgreSQL
+	implementation 'org.postgresql:postgresql:42.7.3'
+	
+	// Liquibase for database migration
+	implementation 'org.liquibase:liquibase-core:4.32.0'
+}
+
+// This module is bootable for running migrations
+bootJar {
+	enabled = true
+	archiveFileName = 'tool-migration.jar'
+}
+
+jar {
+	enabled = false
+}
+
+// Custom task to run Liquibase migration
+task migrate(type: JavaExec) {
+	group = 'database'
+	description = 'Run Liquibase database migration'
+	classpath = sourceSets.main.runtimeClasspath
+	mainClass = 'com.ttl.tool.migration.MigrationApplication'
+	systemProperty 'spring.profiles.active', findProperty('profile') ?: 'default'
+}
