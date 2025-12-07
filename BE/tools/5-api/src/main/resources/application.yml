@@ -20,7 +20,11 @@ spring:
       hibernate:
         archive:
           autodetection: class
+    open-in-view: false
 
+logging:
+  level:
+    org.springframework.orm.jpa.persistenceunit: ERROR
 
 graphql:
   spqr:

@@ -3,9 +3,9 @@ package com.ttl.common.core.command.crud;
 import com.ttl.common.core.command.BaseCommand;
 import com.ttl.common.core.command.CommandHolder;
 import com.ttl.common.core.command.TransactionalCommand;
+
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.lang.NonNull;
 
 import java.lang.reflect.ParameterizedType;
 import java.util.Objects;
@@ -110,13 +110,13 @@ public abstract class BaseCrudUpdateCommand<Entity, Input, ID>
      * Update entity fields from input.
      * Must be implemented by subclasses for specific update logic.
      */
-    protected abstract @NonNull Entity updateEntity(@NonNull Entity entity, Input input, CommandHolder<Input> holder);
+    protected abstract Entity updateEntity(Entity entity, Input input, CommandHolder<Input> holder);
 
     /**
      * Hook: called before saving updated entity
      * Override to modify entity before persistence
      */
-    protected @NonNull Entity beforeSave(@NonNull Entity entity, Input input, CommandHolder<Input> holder) {
+    protected Entity beforeSave(Entity entity, Input input, CommandHolder<Input> holder) {
         return entity;
     }
 
@@ -125,7 +125,7 @@ public abstract class BaseCrudUpdateCommand<Entity, Input, ID>
      * Override to perform additional operations (e.g., send events, invalidate
      * cache)
      */
-    protected void afterSave(@NonNull Entity savedEntity, Input input, CommandHolder<Input> holder) {
+    protected void afterSave(Entity savedEntity, Input input, CommandHolder<Input> holder) {
         // Override if needed
     }
 
